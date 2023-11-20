@@ -1,0 +1,21 @@
+/* Effet de parallaxe sur les nuages */
+.story #place {
+    background-image: url(./images/Studio_Koukaki-image_place.png);
+}
+#place {
+    position: relative;
+}
+.big-cloud {
+    position: absolute;
+    top: 80px;
+    right: -200px;
+    filter: blur(15px);
+    transform: translate3d(300px, 0, 0);
+}
+.little-cloud {
+    position: absolute;
+    top: 300px;
+    right: 220px;
+    filter: blur(15px);
+    transform: translate3d(300px, 0, 0)
+}

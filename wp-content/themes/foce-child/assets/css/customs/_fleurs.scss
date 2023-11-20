@@ -1,0 +1,60 @@
+/***** Section L'Histoire *****/
+.story__article {
+    &::after {
+        animation: rotate 4s linear infinite;
+        transform-origin: 94px 94px;
+
+    }
+}
+.story h2 {
+    &::after {
+        animation: rotate 5s linear infinite;
+        transform-origin: 77px 77px;
+
+    }
+}
+#studio h2 {
+    &::after {
+        animation: rotate2 5s linear infinite;
+        transform-origin: 55px 55px;
+    }
+    &::before {
+        animation: rotate 3s linear infinite;
+        transform-origin: 101px 100px;
+    }
+}
+
+.site-footer {
+    &::after {
+        animation: rotate 5s linear infinite;
+        transform-origin: 78px 77px;
+}
+    &::before {
+
+    animation: rotate2 5s linear infinite;
+    transform-origin: 78px 77px;
+    }
+    ul {
+        &::after {
+            animation: rotate2 5s linear infinite;
+    transform-origin: 323px 323px;
+        }
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotate2 {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}

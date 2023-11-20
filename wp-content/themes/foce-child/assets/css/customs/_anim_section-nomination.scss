@@ -1,0 +1,23 @@
+/*  Section nomination  */
+.section-oscars-texte {
+    background-image: url(../images/orange_characters_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 178px;
+    width: 500px;
+  }
+  .section-oscars-texte p {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .section-oscars {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    padding: 80px;
+  }

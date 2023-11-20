@@ -2,22 +2,18 @@
 add_action('wp_enqueue_scripts', 'theme_enqueue_styles');
 function theme_enqueue_styles()
 {
-    // Déclarer jQuery
-    wp_enqueue_script('jquery');
-
-    // Déclarer le JS
-    wp_enqueue_script(
-        'koukaki',
-        get_template_directory_uri() . 'assets/js/script.js',
-        array('jquery'),
-        '1.0',
-        true
-    );
-
+    // Css parent
     wp_enqueue_style('parent-style', get_template_directory_uri() . '/style.css');
+    
 
-    // Déclarer le fichier CSS à un autre emplacement
+    // Css enfant
     wp_enqueue_style('theme-style', get_stylesheet_directory_uri() . '/assets/css/theme.css');
+
+    // Déclaration du js
+    wp_enqueue_script('custom-script', get_stylesheet_directory_uri() . '/assets/js/script.js', array('jquery'), null, true);
+    // Déclaration du carousel
+    wp_enqueue_style('swiper', get_stylesheet_directory_uri() . '/assets/swiper/swiper-bundle.min.css' );
+    wp_enqueue_script('swiper' , get_stylesheet_directory_uri() . '/assets/swiper/swiper-bundle.min.js' ); 
 }
 
 // Get customizer options form parent theme
