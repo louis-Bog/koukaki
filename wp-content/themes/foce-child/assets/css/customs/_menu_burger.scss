@@ -55,10 +55,9 @@
 .burger.active span::after {
     transform: translateY(0px) rotateZ(-45deg);
 }
-
 /* pour que le titre soit sur la barre de navigation */
 
-.titre-site {
+.site-tittle {
 	display: flex;
     align-items: center;
     justify-content: center;
@@ -228,14 +227,14 @@
 
 .chat-bleu {
     position: absolute;
-    right: 1211px;
-    bottom: 515px;
+    right: 900px;
+    top: 160px;
     height: 100px;
 }
 
 .chat-orange {
     position: absolute;
-    right: 1314px;
+    right: 1100px;
     bottom: 104px;
     height: 80px;
 }
@@ -327,7 +326,7 @@
         top: 61px;
     }
 
-    .small-cloud {
+    .little-cloud {
         right: -394px;
         top: 540px; 
     }
@@ -370,14 +369,14 @@
         position: absolute;
         left: 14px!important;
         width: 49px!important;
-    }
+     }
     }
 
 /* media queris tablette */
 
 @media screen and (max-width: 992px) {
     
-    .small-cloud {
+    .little-cloud {
         right: 220px;
         top: 519px; 
     }
@@ -415,16 +414,20 @@
     
     }
 
-    .small-cloud {
+    .little-cloud {
         right: 23px;
         top: 519px;
-}
+    }
 }
 
 @media screen and (max-width: 1245px) {
     
-    .small-cloud {
+    .little-cloud {
         right: 220px;
         top: 519px; 
+        }
     }
-    }
+
+
+
+    

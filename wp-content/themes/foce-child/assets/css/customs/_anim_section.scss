@@ -77,7 +77,7 @@
   position: absolute;
   animation: floated 2s ease infinite;
 }
-
+/* Effet de flottement du titre sur la video */
 @keyframes floated {
   0% {
       transform: translate(3%, 3%);
@@ -96,7 +96,7 @@
 /* Pour desactiver la vidéo sur la version mobile */
 
 @media screen and (max-width: 767px) {
-  #fond-video {
+  #back-video {
       display: none;
     }
   }
@@ -114,8 +114,6 @@
 }
 
   .banner {
-    position: relative;
-    overflow: hidden;
     opacity: 0;
     animation: fadeIn1 3s ease-in-out forwards;
   }

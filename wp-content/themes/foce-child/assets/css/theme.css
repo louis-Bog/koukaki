@@ -71,6 +71,7 @@
   animation: floated 2s ease infinite;
 }
 
+/* Effet de flottement du titre sur la video */
 @keyframes floated {
   0% {
     transform: translate(3%, 3%);
@@ -87,7 +88,7 @@
 }
 /* Pour desactiver la vidéo sur la version mobile */
 @media screen and (max-width: 767px) {
-  #fond-video {
+  #back-video {
     display: none;
   }
 }
@@ -103,8 +104,6 @@
 }
 
 .banner {
-  position: relative;
-  overflow: hidden;
   opacity: 0;
   animation: fadeIn1 3s ease-in-out forwards;
 }
@@ -182,7 +181,6 @@ section > .story__article > p {
     transform: translateY(0);
   }
 }
-/***** Section L'Histoire *****/
 .story__article::after {
   animation: rotate 4s linear infinite;
   transform-origin: 94px 94px;
@@ -233,7 +231,7 @@ section > .story__article > p {
 }
 /* Effet de parallaxe sur les nuages */
 .story #place {
-  background-image: url(./images/Studio_Koukaki-image_place.png);
+  background-image: url(./images/studio_place-bg);
 }
 
 #place {
@@ -250,7 +248,7 @@ section > .story__article > p {
 
 .little-cloud {
   position: absolute;
-  top: 300px;
+  top: 280px;
   right: 220px;
   filter: blur(15px);
   transform: translate3d(300px, 0, 0);
@@ -353,7 +351,7 @@ section > .story__article > p {
 }
 
 /* pour que le titre soit sur la barre de navigation */
-.titre-site {
+.site-tittle {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -515,14 +513,14 @@ section > .story__article > p {
 
 .chat-bleu {
   position: absolute;
-  right: 1211px;
-  bottom: 515px;
+  right: 900px;
+  top: 160px;
   height: 100px;
 }
 
 .chat-orange {
   position: absolute;
-  right: 1314px;
+  right: 1100px;
   bottom: 104px;
   height: 80px;
 }
@@ -602,7 +600,7 @@ section > .story__article > p {
     right: 294px;
     top: 61px;
   }
-  .small-cloud {
+  .little-cloud {
     right: -394px;
     top: 540px;
   }
@@ -643,7 +641,7 @@ section > .story__article > p {
 }
 /* media queris tablette */
 @media screen and (max-width: 992px) {
-  .small-cloud {
+  .little-cloud {
     right: 220px;
     top: 519px;
   }
@@ -675,13 +673,13 @@ section > .story__article > p {
     right: 4px;
     filter: blur(15px);
   }
-  .small-cloud {
+  .little-cloud {
     right: 23px;
     top: 519px;
   }
 }
 @media screen and (max-width: 1245px) {
-  .small-cloud {
+  .little-cloud {
     right: 220px;
     top: 519px;
   }

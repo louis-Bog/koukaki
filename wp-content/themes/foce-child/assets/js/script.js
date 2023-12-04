@@ -43,12 +43,12 @@ const swiper = new Swiper('.swiper', { // élément qui servira de conteneur pou
 
 // effet de parallaxe sur les nuages //
 const bigCloud = document.querySelector('.big-cloud'); // selectionne l'élement de la classe " big-cloud"  et l'attribut à la variable bigCloud //
-const smallCloud = document.querySelector('.small-cloud'); // séléctionne l'élément de la classe "small-cloud" et l'attribut à la variable smallCloud//
+const littleCloud = document.querySelector('.little-cloud'); // séléctionne l'élément de la classe "small-cloud" et l'attribut à la variable smallCloud//
 
 window.addEventListener('scroll', function() { // évenement d'écoute
     const scrollPosition = window.pageYOffset;
     bigCloud.style.transform = `translate3d(${scrollPosition * -0.3}px, 0, 0)`;
-    smallCloud.style.transform = `translate3d(${scrollPosition * -0.3}px, 0, 0)`;
+    littleCloud.style.transform = `translate3d(${scrollPosition * -0.3}px, 0, 0)`;
 });
 
 // changement du menu burger en croix au clic et animation des titres du menu //
@@ -90,3 +90,4 @@ navLinks.forEach(link => {    // boucle qui permet itérer touts les éléments 
       });
     });
   });
+  

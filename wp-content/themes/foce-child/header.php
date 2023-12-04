@@ -27,7 +27,7 @@
      <header id="masthead" class="site-header">
          <nav id="site-navigation" class="main-navigation">
              <!--Mise en place du menu burger-->
-             <div class="titre-site">
+             <div class="site-tittle">
                  <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
              </div>
              <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
